@@ -8,6 +8,8 @@ end
 gem 'font-awesome-sass', '~> 5.2.0'
 gem "font-awesome-rails"
 
+
+gem 'sprockets', '~>3.7.2'
 gem 'rails', '~> 5.0.2'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
@@ -34,7 +36,7 @@ group :development do
 end
 
 group :production do
-  gem 'rails_12factor'
+  gem 'rails_12factor' #used for sqlite3 - Heroku does not like sqlite3
   gem 'pg'
 end
 
